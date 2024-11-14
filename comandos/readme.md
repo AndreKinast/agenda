@@ -11,8 +11,8 @@ django-admin startproject project .
 configurar o git
 
 ````
-git config --global user.name 'AndreKinast'
-git config --global user.email 'kinast_andre@hotmail.com'
+git config --global user.name 'seunome'
+git config --global user.email 'seuemail'
 git config --global init.defaultBranch main
 
 #configure o gitignore
