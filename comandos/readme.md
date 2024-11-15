@@ -6,6 +6,9 @@ pyhon agenda\Scripts\activate
 pip install django
 django-admin startproject project .
 python manage.py startapp contact
+base.html
+style.css
+
 ````
 
 configurar o git
