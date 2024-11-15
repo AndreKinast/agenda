@@ -5,7 +5,7 @@ python -m venv agenda
 pyhon agenda\Scripts\activate
 pip install django
 django-admin startproject project .
-
+python manage.py startapp contact
 ````
 
 configurar o git
