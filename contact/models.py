@@ -8,6 +8,7 @@ from django.utils import timezone
 #picture(imagem)
 
 
+
 #os campos de texto normalmente são obrigatórios, para que não seja é preciso adicionar 'blank=true'
 class Contact(models.Model):
     first_name = models.CharField(max_length=50)
@@ -16,6 +17,7 @@ class Contact(models.Model):
     email = models.EmailField(max_length=254, blank=True)
     created_date = models.DateTimeField(default=timezone.now)
     description = models.TextField(blank=True)
-
+    show = models.BooleanField(default=True)
+    picture = models.ImageField(blank=True, upload_to= 'pictures/%Y/%m')
     def __str__(self):
         return f'{self.first_name} {self.last_name}'

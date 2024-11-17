@@ -37,6 +37,20 @@ python manage.py changepassword USERNAME
 
 Trabalhando com o model do django
 
+````
+#criar models na pasta model de contact
+#criar campos e deteminar o tipo de arquivo de cada um
+#configurar pasta settings
+STATIC_ROOT = BASE_DIR / 'static'
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+#criar campo imagem, executar o comando 'pip install pillow'
+#migrar a base de dados django
+#configurar pasta gitignore ---'static/', 'media/'
+
+````
+
 ````python
 
 #import o módulo
@@ -61,4 +75,15 @@ contact.delete()
 #seleciona todos os contatos por id desc
 #retorna QuerySet[]
 contacts = Contact.objects.filter(**filters).order_by('-id')
+````
+
+Configurar URLS para poder acessar as imagens dos contatos
+
+````
+#em urls do projeto:
+from django.conf.urls.static import static
+from django.conf import settings
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 ````
