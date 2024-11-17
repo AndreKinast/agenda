@@ -101,3 +101,10 @@ fazer as migrações de dados django
 
 registrar o novo model em contact-admin
 ````
+
+Verbose name
+
+````
+em models configurar verbose name, para que substantivos singulares e plurais sejam escristos corretamente
+
+````
