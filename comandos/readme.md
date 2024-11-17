@@ -87,3 +87,17 @@ from django.conf import settings
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 ````
+
+Criar model foreignkey
+
+````
+Criar outro model
+criar uma category no model já existente que recebe como parâmetro o novo model
+
+ category = models.ForeignKey(Category, on_delete=models.SET_NULL,
+                                 blank=True, null=True)
+
+fazer as migrações de dados django
+
+registrar o novo model em contact-admin
+````

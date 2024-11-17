@@ -1,9 +1,9 @@
 from django.contrib import admin
-from contact.models import Contact
+from contact import models
 
 
 # Register your models here.
-@admin.register(Contact)
+@admin.register(models.Contact)
 class ContactAdmin(admin.ModelAdmin):
     #colunas da página admin
     list_display = 'id', 'first_name', 'last_name', 'phone', 
@@ -17,3 +17,10 @@ class ContactAdmin(admin.ModelAdmin):
     list_editable = 'first_name', 'last_name'
     #valor se torna um link
     list_display_links = 'id', 'phone',
+
+@admin.register(models.Category)
+class CategoryAdmin(admin.ModelAdmin):
+    #colunas da página admin
+    list_display = 'name', 
+    ordering = 'id', #ordena os contados pelo id em ordem crescente, com '-id terá uma ordem decrescente
+   
