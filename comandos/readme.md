@@ -111,10 +111,22 @@ em models configurar verbose name, para que substantivos singulares e plurais se
 criar foreignkey owner
 
 ````
+#permite que cada contato criafo tenha identificado o usuário que o criou
 from django.contrib.auth.models import User
 criar campo owner --- para criar novos usuários
 
 owner = models.ForeignKey(User, on_delete=models.SET_NULL,
                                  blank=True, null=True)
 fazer as migrações de dados django
+````
+
+criar contatos aleatórios com faker
+
+````
+pasta utils -- create_contacts.py
+
+pip install faker
+
+executar
+python utils/create_contacts.py
 ````
