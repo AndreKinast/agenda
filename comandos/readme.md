@@ -108,3 +108,13 @@ Verbose name
 em models configurar verbose name, para que substantivos singulares e plurais sejam escristos corretamente
 
 ````
+criar foreignkey owner
+
+````
+from django.contrib.auth.models import User
+criar campo owner --- para criar novos usuários
+
+owner = models.ForeignKey(User, on_delete=models.SET_NULL,
+                                 blank=True, null=True)
+fazer as migrações de dados django
+````
