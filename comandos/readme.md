@@ -130,3 +130,24 @@ pip install faker
 executar
 python utils/create_contacts.py
 ````
+configurar css
+````
+no arquivo base.html criar a tag main class content
+criar o block content
+no arquivo index.html usar o block content
+acessar os contatos através de contact_views
+
+from contact.models import Contact
+
+def index(request):
+    contacts = Contact.objects.all()
+    context = {
+        'contacts': contacts,
+    }
+    return render (
+        request,
+        'contact/index.html',
+        context
+    )
+
+    no block content de index html criar um for
