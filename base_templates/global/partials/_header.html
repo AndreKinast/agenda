@@ -20,13 +20,15 @@
         </ul>
     </nav>
     <div class="search">
-        <form action="" method="get">
+        <form action="{% url "contact:search" %}" 
+        methode="GET"> 
             <input 
             placeholder="Search" 
             type="search" 
             class="search-input"
             id="search"
-            name="q">
+            name="q"
+            value={{search_value}}>
         </form>
     </div>
 </header>

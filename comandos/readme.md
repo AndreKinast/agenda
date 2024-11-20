@@ -184,3 +184,12 @@ copiar header de base.html
 em base.html fazer o include
 {% include "global/partials/_header.html" %}
 ````
+configurar pesquisa
+````
+criar view
+criar url
+passar a url no form search
+import redirect
+fazendo um filter, pelo valor digitado no search
+import Q para poder pesquisar dois campos com filter usando "ou = | "
+````
