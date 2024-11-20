@@ -193,3 +193,12 @@ import redirect
 fazendo um filter, pelo valor digitado no search
 import Q para poder pesquisar dois campos com filter usando "ou = | "
 ````
+usando a classe Paginator para paginação no django
+
+````
+nas views: from django.core.paginator import Paginator
+configurar a view index
+configurar a view search
+criar o partial _pagination.html
+incluir o partial no base.html
+````
