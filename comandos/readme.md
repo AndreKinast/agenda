@@ -167,3 +167,20 @@ criar view contact em contact_views
 configurar url.py
 configurar o link em index.html
 ````
+criando o cabeçalho
+
+````
+em base.html criar a tag header
+configurar o link da header para retornar a página inicial
+criar o menu
+criar campo de pesquisa
+
+````
+criar parcial de header
+
+````
+em base_templates/global criar pasta partials e arquivo _header.html
+copiar header de base.html
+em base.html fazer o include
+{% include "global/partials/_header.html" %}
+````
