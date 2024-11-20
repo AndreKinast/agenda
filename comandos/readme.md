@@ -159,4 +159,11 @@ configurar a tabela que apresentará os contatos
 em index.html no block content configurar html para que apresente todos os contatos em uma tabela
 em contact_views configurar a forma como a tabela se apresentará
 ````
-
+configurar para acessar um único contato
+````
+criar template contact.html
+extends global/base
+criar view contact em contact_views
+configurar url.py
+configurar o link em index.html
+````
