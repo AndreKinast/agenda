@@ -151,3 +151,12 @@ def index(request):
     )
 
     no block content de index html criar um for
+
+````
+configurar a tabela que apresentará os contatos
+
+````
+em index.html no block content configurar html para que apresente todos os contatos em uma tabela
+
+````
+
