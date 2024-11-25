@@ -202,3 +202,19 @@ configurar a view search
 criar o partial _pagination.html
 incluir o partial no base.html
 ````
+criar CRUD
+
+```` 
+criar e configurar função criar um contato
+em template contact criar create.html
+extends global/cbase.html
+block content
+organizar aqrquivo html
+csrf_token para proteger contra ataques csrf
+````
+em views criar contact_forms.py
+criar view create
+em __init__.py ----> from .contact_forms.py import *
+````
+em urls.py criar a url para a view create
+````
