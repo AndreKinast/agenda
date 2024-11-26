@@ -213,8 +213,20 @@ organizar aqrquivo html
 csrf_token para proteger contra ataques csrf
 ````
 em views criar contact_forms.py
+from contact.forms import ContactForm
 criar view create
 em __init__.py ----> from .contact_forms.py import *
+
 ````
 em urls.py criar a url para a view create
+````
+criar formulários em django
+
+````
+configurar o formulário em create.html
+criar arquivo forms.py
+from django import forms
+from django.core.exceptions import ValidationError
+criar a class ContactForm
+
 ````
