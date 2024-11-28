@@ -230,3 +230,11 @@ from django.core.exceptions import ValidationError
 criar a class ContactForm
 
 ````
+configurar o formulário
+````
+em forms.py --->>> widgets
+````
+validando campos formulário
+````
+configurar método clean em forms.py
+````
