@@ -238,3 +238,8 @@ validando campos formulário
 ````
 configurar método clean em forms.py
 ````
+salvando o formulário e redirecionando a página
+````
+em contact_forms.py criar uma variável form
+if form.is_valid():
+````
