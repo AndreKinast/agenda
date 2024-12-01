@@ -5,7 +5,7 @@
     <h2>Contact</h2>
   
     <form 
-        action="{% url "contact:create" %}"
+        action="{{form_action}}"
         method="POST"
         enctype="multipart/form-data"
     > <!--para dados sensíveis e ou para enviar imagens utiliazar sempre o method post-->

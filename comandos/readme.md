@@ -238,8 +238,29 @@ validando campos formulário
 ````
 configurar método clean em forms.py
 ````
-salvando o formulário e redirecionando a página
+salvando o formulário e redirecionando o formulário
 ````
 em contact_forms.py criar uma variável form
 if form.is_valid():
+````
+criando as opções update e delete
+````
+em contact_forms.py 
+from django.urls import reverse
+configurar def create
+criar a views update
+import get_object_or_404
+de contato models import Contact
+criar a views para delete
+````
+em create.html
+form action {{form_action}}, (para action passar a variável form_action)
+````
+em urls.py criar a url para update
+criar a url para delete
+````
+em contact.html 
+criar o link para update
+criar form e botão para deletes
+criar if para confirmar delete
 ````
