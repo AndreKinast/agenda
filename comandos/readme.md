@@ -264,3 +264,15 @@ criar o link para update
 criar form e botão para deletes
 criar if para confirmar delete
 ````
+exibindo imagem no contado e no update
+
+````
+em contact.html inserir imagem
+````
+em forms.py adicionar o campo picture e configura
+````
+em create.html criar um if para exibir a imagem
+````
+para que passe a ser atualizada a imagem
+em contact_forms -- em TODOS os locais que tiver request.POST, passar, request.FILES
+````
