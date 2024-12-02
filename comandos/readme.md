@@ -276,3 +276,22 @@ em create.html criar um if para exibir a imagem
 para que passe a ser atualizada a imagem
 em contact_forms -- em TODOS os locais que tiver request.POST, passar, request.FILES
 ````
+Criar novos usuários
+````
+em forms.py
+from django.contrib.auth.forms import UserCreationForm
+criar a class RegisterForm
+from django.contrib.auth.models import User
+criar a class Meta
+criar o metodo clean_email para impedir que possa ser criado usuários com o mesmo email
+configurar first_mname, last_name e email, para que sejam campos obrigatórios e que tenham um tamanho minimo
+````
+criar register.html
+````
+em views criar user_forms
+criar uma view
+from contact.forms import RegisterForm
+````
+em __init__.py ---> from .user_forms import *
+````
+em urls.py criar uma url para create user
