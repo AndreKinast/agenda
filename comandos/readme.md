@@ -314,3 +314,28 @@ em contact_forms
 from django.contrib import messages
 configurar mensagens para cada view
 ````
+
+criando login e logout
+
+````
+em templates --> contact 
+criar pasta partials e user-form.html
+retirar o form de register.html --> permitirá que seja usado em outros locais
+colar o form em user-form.html
+fazer o include de user-form.html em register.html
+````
+duplicar a pasta de register.html com o nome de login
+alterar o h2 para login
+fazer um if para confirmar a autenticidade do usuário
+````
+em user_forms
+importar AuthenticationForm
+criar uma view para login
+importar auth
+na view auth.login()
+criar umaview para logout
+````
+em urls.py
+criar uma url para login
+criar uma url para logout
+````
