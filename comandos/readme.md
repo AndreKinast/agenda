@@ -295,3 +295,22 @@ from contact.forms import RegisterForm
 em __init__.py ---> from .user_forms import *
 ````
 em urls.py criar uma url para create user
+````
+enviando mensagens com django
+````
+em user_forms
+import redirect
+from django.contrib import messages
+messages.tipo(request, 'um texto')
+````
+em partials
+criar o arquivo messages.html
+criar um if para checar as mensagens e um for para exibi-las
+````
+em base.html
+fazer o include de _messages.html
+````
+em contact_forms
+from django.contrib import messages
+configurar mensagens para cada view
+````
