@@ -339,3 +339,21 @@ em urls.py
 criar uma url para login
 criar uma url para logout
 ````
+
+criar formulário para atualizar usuários
+´´´´
+em forms.py
+criar class RegisterUpdateForm
+import password_validation
+configurar campos, criar campos password, fazer validação de senha
+criar uma verificação de email
+criar método para alterar senha
+criar método para verificação de senhas
+criar método para salvar nova senha
+````
+em urls.py
+criar uma url
+````
+em user_forms
+criar uma view
+importar RegisterUpdateForm
