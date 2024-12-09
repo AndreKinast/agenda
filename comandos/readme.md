@@ -357,3 +357,17 @@ criar uma url
 em user_forms
 criar uma view
 importar RegisterUpdateForm
+````
+diferenciando usuário logado de não logado
+````
+em _header.html
+criar um if para verificar se usuário está logado
+criar os links para cada opção
+````
+em user_forms.py
+import login_required
+nos locaisa que precisar de usuário logado usar o decorator '@loginrequired'
+````
+em contact_forms.py
+import login_required
+nos locaisa que precisar de usuário logado usar o decorator '@loginrequired'
