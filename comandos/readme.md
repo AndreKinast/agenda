@@ -371,3 +371,11 @@ nos locaisa que precisar de usuário logado usar o decorator '@loginrequired'
 em contact_forms.py
 import login_required
 nos locaisa que precisar de usuário logado usar o decorator '@loginrequired'
+````
+vinculando usuário aos contatos que ele criou
+````
+em contact_forms
+em em def register -->>contact= form.save(commit=False) 
+contact.owner = request.user
+contact.save()
+````
